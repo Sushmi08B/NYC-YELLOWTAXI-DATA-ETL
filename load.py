@@ -5,7 +5,7 @@ import os
 import logging 
 
 logging.basicConfig(
-    filename='/NYC_ETL/logs/transform.log',
+    filename='/NYC_ETL/logs/load.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
