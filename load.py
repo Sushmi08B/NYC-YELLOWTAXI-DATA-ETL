@@ -12,7 +12,7 @@ logging.basicConfig(
 
 dotenv.load_dotenv(dotenv_path='/NYC_ETL/config.env')
 
-spark = SparkSession.builder.appName("NYC_ETL").config("spark.jars", "/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/WeatherETL/postgresql-42.7.6.jar").getOrCreate()
+spark = SparkSession.builder.appName("NYC_ETL").config("spark.jars", "/NYC_ETL/postgresql-42.7.6.jar").getOrCreate()
 
 host = os.getenv("PG_HOST")
 port = os.getenv("PG_PORT")
