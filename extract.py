@@ -4,12 +4,12 @@ import os
 import logging
 
 # Load environment variables from .env file
-load_dotenv(dotenv_path='/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/NYC_ETL/config.env')
+load_dotenv(dotenv_path='/NYC_ETL/config.env')
 
 
 # Configure logging
 logging.basicConfig(
-    filename = '/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/NYC_ETL/extract.log',
+    filename = '/extract.log',
     level = logging.INFO, 
     format='%(asctime)s - %(levelname)s -%(message)s'
 )
