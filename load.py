@@ -5,12 +5,12 @@ import os
 import logging 
 
 logging.basicConfig(
-    filename='/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/NYC_ETLNYC_ETL/extract.log',
+    filename='/NYC_ETL/logs/transform.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-dotenv.load_dotenv(dotenv_path='/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/NYC_ETL/config.env')
+dotenv.load_dotenv(dotenv_path='/NYC_ETL/config.env')
 
 spark = SparkSession.builder.appName("NYC_ETL").config("spark.jars", "/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/WeatherETL/postgresql-42.7.6.jar").getOrCreate()
 
