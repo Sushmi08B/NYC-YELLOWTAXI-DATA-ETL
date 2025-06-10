@@ -9,7 +9,7 @@ load_dotenv(dotenv_path='/NYC_ETL/config.env')
 
 # Configure logging
 logging.basicConfig(
-    filename = '/extract.log',
+    filename = '/NYC_ETL/extract.log',
     level = logging.INFO, 
     format='%(asctime)s - %(levelname)s -%(message)s'
 )
