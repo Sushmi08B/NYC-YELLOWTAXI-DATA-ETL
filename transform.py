@@ -94,7 +94,7 @@ def transform(file_path, year, month):
     )
 
     # reading the zones data 
-    zones_df = spark.read.csv("/Users/chanduprasadreddypotukanuma/Downloads/Projects/taxi-zone-lookup.csv", header=True, inferSchema=True)
+    zones_df = spark.read.csv("/NYC_ETL/taxi-zone-lookup.csv", header=True, inferSchema=True)
 
     # Joining the zones data with the main dataframe
     df_raw = df_raw.join(zones_df, df_raw.PULocationID == zones_df.LocationID, how='left') \
