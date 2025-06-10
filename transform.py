@@ -5,11 +5,11 @@ import dotenv
 from pyspark.sql.types import *
 from pyspark.sql import functions as F
 
-dotenv.load_dotenv(dotenv_path='/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/NYC_ETL/config.env')
+dotenv.load_dotenv(dotenv_path='/NYC_ETL/config.env')
 
 
 logging.basicConfig(
-    filename = '/Users/chanduprasadreddypotukanuma/PycharmProjects/PySparkProject/NYC_ETL/extract.log',
+    filename = '/NYC_ETL/logs/transform.log',
     level = logging.INFO,
     format = '%(asctime)s - %(levelname)s - %(message)s'
 )
