@@ -65,7 +65,4 @@ for year in range(2024, 2025):
 
 logging.info("Data extraction process completed successfully.")
 
-
-# want to change the year 
-
-
+# End of extract.py
