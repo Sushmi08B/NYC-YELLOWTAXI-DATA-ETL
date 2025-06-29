@@ -31,3 +31,51 @@ A production-grade ETL pipeline built using PySpark to process, clean, enrich, a
 ```bash
 git clone https://github.com/your-username/nyc-yellow-taxi-etl.git
 cd nyc-yellow-taxi-etl
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Environment Variables
+
+Copy `.env.example` to `.env` and update the paths and database credentials.
+
+```bash
+cp .env.example .env
+# Edit .env with your preferred editor
+```
+
+### 4. Run the ETL Pipeline
+
+Run each stage individually or orchestrate as needed:
+
+```bash
+python extract.py
+python transform.py
+python load.py
+```
+
+---
+
+## Folder Structure
+
+```
+.
+├── extract.py
+├── transform.py
+├── load.py
+├── /data
+│   ├── /raw
+│   ├── /clean
+│   └── /quarantine
+├── .env
+└── requirements.txt
+```
+
+---
+
+## License
+
+[MIT](LICENSE)
